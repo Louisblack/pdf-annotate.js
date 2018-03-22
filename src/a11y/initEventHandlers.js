@@ -8,7 +8,7 @@ import PDFJSAnnotate from '../PDFJSAnnotate';
 /**
  * Initialize the event handlers for keeping screen reader hints synced with data
  */
-export default function initEventHandlers() {
+export default function initEventHandlers(RENDER_OPTIONS) {
   addEventListener('annotation:add', (documentId, pageNumber, annotation) => {
     reorderAnnotationsByType(documentId, pageNumber, annotation.type);
   });

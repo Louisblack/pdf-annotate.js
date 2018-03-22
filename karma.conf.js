@@ -13,10 +13,10 @@ module.exports = function(config) {
 
     exclude: [
     ],
-
-    preprocessors: {
-      'test/**/*.spec.js': ['webpack', 'sourcemap']
-    },
+    //
+    // preprocessors: {
+    //   'test/**/*.spec.js': ['webpack', 'sourcemap']
+    // },
 
     reporters: ['dots', 'coverage'],
 

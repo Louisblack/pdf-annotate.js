@@ -2,7 +2,7 @@ import insertScreenReaderHint from './insertScreenReaderHint';
 import initEventHandlers from './initEventHandlers';
 
 // TODO This is not the right place for this to live
-initEventHandlers();
+// initEventHandlers();
 
 /**
  * Insert hints into the DOM for screen readers.

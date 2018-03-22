@@ -1,4 +1,4 @@
-import { addEventListener, removeEventListener, fireEvent } from './event';
+import { addEventListener, removeEventListener, fireEvent, initEventListeners } from './event';
 import { disableEdit, enableEdit } from './edit';
 import { disablePen, enablePen, setPen } from './pen';
 import { disablePoint, enablePoint } from './point';
@@ -13,5 +13,5 @@ export default {
   disablePoint, enablePoint,
   disableRect, enableRect,
   disableText, enableText, setText,
-  createPage, renderPage
+  createPage, renderPage, initEventListeners
 };

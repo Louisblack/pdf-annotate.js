@@ -4,6 +4,8 @@ import {
   findSVGAtPoint
 } from './utils';
 
+import initEventHandlers from '../a11y/initEventHandlers';
+
 const emitter = new EventEmitter;
 
 let clickNode;
@@ -51,3 +53,6 @@ document.addEventListener('click', function handleDocumentClick(e) {
 export function fireEvent() { emitter.emit(...arguments); };
 export function addEventListener() { emitter.on(...arguments); };
 export function removeEventListener() { emitter.removeListener(...arguments); };
+export function initEventListeners(RENDER_OPTIONS) {
+  initEventHandlers(RENDER_OPTIONS);
+}

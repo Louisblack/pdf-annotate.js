@@ -2,6 +2,7 @@ import StoreAdapter from './adapter/StoreAdapter';
 import LocalStoreAdapter from './adapter/LocalStoreAdapter';
 import render from './render';
 import UI from './UI';
+import initToolbarEvents from './toolbar/initEventHandlers'
 
 export default {
   /**
@@ -48,6 +49,8 @@ export default {
    * editing, and deleting annotations in the browser.
    */
   UI,
+
+  initToolbarEvents,
 
   /**
    * Render the annotations for a page in the PDF Document
